@@ -1,0 +1,184 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.leftNav {
+  grid-column: 1/2;
+  margin-top: 100px;
+  padding: 4px 30px;
+  position: fixed;
+  transform: translateX(0%);
+  transition: transform 0.3s linear;
+}
+.hide {
+  grid-column: 1/2;
+  margin-top: 100px;
+  padding: 4px 30px;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.3s linear;
+}
+#abilities,
+.abilities,
+#abilities2,
+.abilities2 {
+  font-size: 1em;
+  padding: 2px;
+  margin-left: 10px;
+  margin: 10px;
+}
+.choseAbilities {
+  display: block;
+}
+.select {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.wrap {
+  display: flex;
+}
+
+.selectView {
+  text-align: center;
+  width: 50px;
+  cursor: pointer;
+  transform: scale(1.5);
+  margin: 10px 0;
+}
+.buttonList {
+  grid-column: 3/4;
+  display: flex;
+  font-size: 1em;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+.page {
+  grid-column: 2/5;
+  text-align: center;
+}
+.alinePage {
+  grid-column: 1/5;
+  text-align: center;
+}
+.buttonList li {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px 16px;
+  border-radius: 50%;
+}
+
+.buttonList li:hover {
+  background-color: yellow;
+  cursor: pointer;
+  transition: 0.75s;
+}
+.activePage {
+  background-color: yellow;
+}
+.element {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* Card */
+.card {
+  width: 270px;
+  border: 4px solid black;
+  border-radius: 20px;
+  height: 400px;
+  padding: 10px;
+  margin: 5px;
+  background-color: bisque;
+  position: relative;
+  background-color: bisque;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  font-size: 1.1em;
+}
+.card img {
+  width: 140px;
+  margin-top: 27px;
+  margin-bottom: -5px;
+}
+.card h2 {
+  text-align: center;
+}
+.pokemonList {
+  grid-column: 2/5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 800px;
+  margin-top: 100px;
+  text-align: center;
+}
+.alinePokemonList {
+  grid-column: 1/5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 800px;
+  margin-top: 100px;
+  text-align: center;
+}
+.listAbilities {
+  list-style: none;
+  font-style: italic;
+  font-weight: 1000;
+}
+.pokemonName::after,
+.pokemonName::before {
+  content: "★";
+  margin: 5px;
+  color: black;
+}
+.pokemonName {
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  padding-bottom: 9px;
+  font-style: italic;
+  color: rgb(0, 27, 116);
+  margin-bottom: 9px;
+  font-size: 1.2em;
+  font-weight: 1000;
+}
+.weight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  margin: 15px;
+}
+.exp {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 1em;
+  margin: 10px;
+}
+.title {
+  font-size: 18px;
+}
+.param {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 4px;
+  margin-left: 4px;
+}
+.type {
+  position: absolute;
+  margin: 10px;
+}
+.type2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
